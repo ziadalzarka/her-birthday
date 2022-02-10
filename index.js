@@ -87,8 +87,11 @@ async function execute() {
 
 execute();
 
-window.addEventListener("click", (event) => {
+const callback = () => {
   const audio = document.querySelector("audio");
   audio.volume = 0.2;
   audio.play();
-});
+};
+
+window.addEventListener("click", callback);
+window.addEventListener("touchstart", callback);
