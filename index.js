@@ -87,7 +87,7 @@ async function execute() {
 
 execute();
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("click", (event) => {
   const audio = document.querySelector("audio");
   audio.volume = 0.2;
   audio.play();
