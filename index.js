@@ -73,7 +73,7 @@ async function execute() {
   await sleep(2000);
 
   document.getElementById("text").innerText = "I love you";
-  gsap.to("#text", { opacity: 1, duration: 1.5, ease: "power1.in" );
+  gsap.to("#text", { opacity: 1, duration: 1.5, ease: "power1.in" });
 
   await sleep(5000);
 
@@ -82,7 +82,7 @@ async function execute() {
   await sleep(2000);
 
   document.getElementById("text").innerText = "Happy birthday :)";
-  gsap.to("#text", { opacity: 1,  duration: 1.5, ease: "power1.in" });
+  gsap.to("#text", { opacity: 1, duration: 1.5, ease: "power1.in" });
 }
 
 execute();
