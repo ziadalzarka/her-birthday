@@ -1,6 +1,10 @@
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function execute() {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+
   // Happy birthday, sweetie!
   gsap.to("#intro", { opacity: 1, duration: 1 });
 
