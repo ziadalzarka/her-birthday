@@ -27,6 +27,12 @@ async function execute() {
   // Fade second slide in
   gsap.to("#page-2-slide-2", { opacity: 1, duration: 1.5, ease: "power1.in" });
   gsap.to(".earth", { opacity: 1, scale: 1, duration: 20 });
+  TweenMax.to(".earth", 10, {
+    rotation: "+=360",
+    repeat: -1,
+    ease: Linear.easeNone,
+    transformOrigin: "50% 50%",
+  });
 
   await sleep(6000);
 
