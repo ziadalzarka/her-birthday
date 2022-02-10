@@ -8,37 +8,67 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
     <title>Happy birthday, babe 💖</title>
   </head>
   <body>
     <div class="container">
-      <div class="d-none page-1">
-        <p>Happy birthday, sweetie :)</p>
+      <div id="page-1">
+        <p id="intro">Happy birthday, sweetie :)</p>
       </div>
-      <div class="d-none page-2">
-        <div class="d-flex flex-row justify-content-center">
-          <p>This is you</p>
-          <img id="this-is-you-arrow" src="arrow.svg" alt="arrow" />
-        </div>
-        <div class="d-flex flex-row justify-content-center">
-          <img class="w-50" src="unicorn.jpg" alt="unicorn" />
-        </div>
-      </div>
-      <div class="page-3">
-        <div class="d-flex flex-row justify-content-center">
-          <img id="can-you-see-this-arrow" src="arrow_side.svg" alt="arrow" />
-          <div class="d-flex flex-column" id="can-you-see-this">
-            <p>Can you see this?</p>
-            <p>No?</p>
-            <p>Let's zoom in...</p>
+      <div id="page-2" class="d-none">
+        <div class="page-2-slides">
+          <div
+            id="page-2-slide-1"
+            class="d-flex flex-row justify-content-center hanging-slide"
+          >
+            <p>This is you</p>
+            <img id="this-is-you-arrow" src="arrow.svg" alt="arrow" />
+          </div>
+          <div
+            id="page-2-slide-2"
+            class="d-flex flex-row justify-content-center"
+          >
+            <img id="can-you-see-this-arrow" src="arrow_side.svg" alt="arrow" />
+            <div class="d-flex flex-column content">
+              <p>Can you see this?</p>
+              <p>No?</p>
+              <p>Look closer...</p>
+            </div>
+          </div>
+          <div
+            id="page-2-slide-3"
+            class="d-flex flex-row justify-content-center hanging-slide"
+          >
+            <div class="d-flex flex-column content">
+              <p id="what-is-that">Oh, what is that?</p>
+              <p id="is-it-the-world">Is it ummm.. the world?</p>
+            </div>
+          </div>
+          <div
+            id="page-2-slide-4"
+            class="d-flex flex-row justify-content-center hanging-slide"
+          >
+            <div class="d-flex flex-column content">
+              <p>Wait look!</p>
+              <p>Is it revolving around you?</p>
+            </div>
           </div>
         </div>
         <div class="d-flex flex-row justify-content-center">
-          <img class="w-50" src="unicorn.jpg" alt="unicorn" />
+          <div class="earth-container unicorn">
+            <img id="earth" class="earth spin" src="earth.png" alt="earth" />
+          </div>
+          <img class="unicorn" src="unicorn.jpg" alt="unicorn" />
         </div>
       </div>
+      <div id="page-3">
+        <p id="text">It's my world...</p>
+      </div>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

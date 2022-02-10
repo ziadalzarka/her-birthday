@@ -29,21 +29,97 @@ p {
   display: none;
 }
 
-.w-50 {
-  width: 50%;
-}
-
 #this-is-you-arrow {
   margin-left: 1em;
   margin-top: 0.5em;
 }
 
-#can-you-see-this p {
+.content p {
   margin-top: 0;
   margin-bottom: 0.75em;
 }
 
 #can-you-see-this-arrow {
   margin-top: 1.5em;
-  margin-right: -0.5em;
+  transform: rotate(12deg);
+}
+
+.unicorn {
+  width: 18em;
+  height: 18em;
+  transition: all 0.5s;
+}
+
+#what-is-that {
+  margin-left: -4em;
+}
+
+#is-it-the-world {
+  margin-left: 1em;
+}
+
+.relative {
+  position: relative;
+}
+
+.earth-container {
+  position: absolute;
+}
+
+.earth {
+  position: absolute;
+  width: 1.5em;
+  left: 24%;
+  top: 3%;
+}
+
+#intro,
+#page-2,
+#page-3,
+#page-2-slide-2,
+#page-2-slide-3,
+#page-2-slide-4,
+.earth {
+  opacity: 0;
+}
+
+.earth {
+  transform: scale(0);
+}
+
+.page-2-slides {
+  position: relative;
+}
+
+.page-2-slides .hanging-slide {
+  position: absolute;
+  width: 100%;
+}
+
+#page-2-slide-1 {
+  top: 20%;
+}
+
+#page-2-slide-3 {
+  top: 35%;
+}
+
+#page-2-slide-4 {
+  top: 20%;
+}
+
+.spin {
+  animation: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
